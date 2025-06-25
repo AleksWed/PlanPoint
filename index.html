@@ -54,21 +54,27 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Coming Soon текст */
+    /* Coming Soon текст и кнопки */
     .coming-soon {
       text-align: center;
       font-size: 1.2rem;
       margin-top: 2rem;
       color: #2c3e50;
     }
-    .coming-soon span {
-      display: inline-block;
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
       margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .store-buttons span {
       background: #000;
       color: #fff;
       padding: 0.4rem 1rem;
       border-radius: 8px;
       font-weight: bold;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -87,8 +93,10 @@
   <!-- Coming Soon -->
   <div class="coming-soon">
     Coming Soon:
-    <br>
-    <span>Download on the App Store</span>
+    <div class="store-buttons">
+      <span>Download on the App Store</span>
+      <span>Download for Google Play</span>
+    </div>
   </div>
 
   <section>
@@ -118,7 +126,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Plan Point. All rights reserved.
+    &copy; 2025 ELENE GOKSADZE. All rights reserved.
   </footer>
 
 </body>

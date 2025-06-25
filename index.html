@@ -35,23 +35,40 @@
       font-size: 0.9em;
       color: #6c757d;
     }
-    .gallery {
+
+    /* Слайдер */
+    .slider {
       display: flex;
-      flex-wrap: wrap;
+      overflow-x: auto;
       gap: 1rem;
-      justify-content: center;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
       margin: 2rem 0;
     }
-    .gallery img {
-      width: 45%;
+    .slider img {
+      flex: 0 0 auto;
+      width: 100%;
       max-width: 300px;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      scroll-snap-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    @media (max-width: 600px) {
-      .gallery img {
-        width: 100%;
-      }
+
+    /* Coming Soon текст */
+    .coming-soon {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      color: #2c3e50;
+    }
+    .coming-soon span {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: #000;
+      color: #fff;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -59,12 +76,19 @@
 
   <h1>Plan Point — Daily Planner</h1>
 
-  <!-- Галерея изображений -->
-  <div class="gallery">
+  <!-- Слайдер с изображениями -->
+  <div class="slider">
     <img src="image1.jpg" alt="Скриншот 1">
     <img src="image2.jpg" alt="Скриншот 2">
     <img src="image3.jpg" alt="Скриншот 3">
     <img src="image4.jpg" alt="Скриншот 4">
+  </div>
+
+  <!-- Coming Soon -->
+  <div class="coming-soon">
+    Coming Soon:
+    <br>
+    <span>Download on the App Store</span>
   </div>
 
   <section>

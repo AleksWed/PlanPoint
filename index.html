@@ -54,14 +54,14 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Coming Soon текст и кнопки */
-    .coming-soon {
+    /* Coming Soon и Download блоки */
+    .coming-soon, .download {
       text-align: center;
       font-size: 1.2rem;
       margin-top: 2rem;
       color: #2c3e50;
     }
-    .store-buttons {
+    .store-buttons, .download-buttons {
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -75,6 +75,18 @@
       border-radius: 8px;
       font-weight: bold;
       font-size: 0.95rem;
+    }
+    .download-buttons a {
+      background: #000;
+      color: #fff;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+    .download-buttons a:hover {
+      background: #333;
     }
   </style>
 </head>
@@ -90,11 +102,20 @@
     <img src="image4.jpg" alt="Скриншот 4">
   </div>
 
-  <!-- Coming Soon -->
+  <!-- Download Section -->
+  <div class="download">
+    <h2>Download</h2>
+    <div class="download-buttons">
+      <a href="https://apps.apple.com/vu/app/planpoint-daily/id6747754629" target="_blank" rel="noopener noreferrer">
+        Download on the App Store
+      </a>
+    </div>
+  </div>
+
+  <!-- Coming Soon Section -->
   <div class="coming-soon">
     Coming Soon:
     <div class="store-buttons">
-      <span>Download on the App Store</span>
       <span>Download for Google Play</span>
     </div>
   </div>
